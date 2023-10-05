@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>home.jsp</title>
 <link rel="stylesheet" href="/css/cube.css">
+<link rel="icon" type="image/png" href="favicon.png"/>
 <style type="text/css">
 
 .menu {
@@ -92,13 +93,13 @@ window.onload = function() {
 	<li style="padding: 0px 20px;">
 		<section class="perspective">
 		<article class="cube">
-			<div class="base">Alpha</div>
-			<div class="base front">하나</div>
-			<div class="base back">둘</div>
-			<div class="base left">셋</div>
-			<div class="base right">넷</div>
-			<div class="base top">야</div>
-			<div class="base bottom">호</div>
+			<div class="base">Base</div>
+			<div class="base front">Front</div>
+			<div class="base back">Back</div>
+			<div class="base left">Left</div>
+			<div class="base right">Right</div>
+			<div class="base top">Top</div>
+			<div class="base bottom">Bottom</div>
 		</article>
 		</section>
 	</li>
@@ -118,7 +119,7 @@ window.onload = function() {
 			<li class="sub-menu-item"><a target="content" href="/ani/fill">fill</a></li>
 			<li class="sub-menu-item"><a target="content" href="/ani/cross">cross</a></li>
 			<li class="sub-menu-item"><a target="content" href="/ani/race">race</a></li>
-			<li class="sub-menu-item"><a target="content" href="/ani/cube">cube</a></li>
+			<li class="sub-menu-item"><a target="content" href="/cube.jsp">cube</a></li>
 		</ol>
 	</li>
 	<li class="menu-item">
