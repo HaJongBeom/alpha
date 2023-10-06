@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>home.jsp</title>
+<link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="stylesheet" href="/css/cube.css">
-<link rel="icon" type="image/png" href="favicon.png"/>
 <style type="text/css">
 
 .menu {
@@ -25,11 +25,11 @@
 /* 	min-width: 150px; */
 	width: 150px;
 	flex-shrink: 0;
-	background: orange;
+	background: lime;
 }
 
 .menu-item:hover > .menu-title {
-	text-shadow: 10px 10px 5px red;
+	text-shadow: 10px 10px 5px black;
 }
 
 .menu-item:hover > .sub-menu {
@@ -76,15 +76,20 @@ iframe {
 }
 
 </style>
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
 <script type="text/javascript">
 function resize() {
 	let iframe = document.querySelector('iframe');
 	iframe.style.height = getComputedStyle(iframe.contentDocument.documentElement).height;
 }
 
-window.onload = function() {
-	setInterval(resize, 100);	
-}
+//window.onload = function() {
+//	setInterval(resize, 100);	
+//}
+$(document).ready(function() {
+	setInterval(resize, 100);
+});
+
 </script>
 </head>
 <body>
@@ -93,13 +98,13 @@ window.onload = function() {
 	<li style="padding: 0px 20px;">
 		<section class="perspective">
 		<article class="cube">
-			<div class="base">Base</div>
-			<div class="base front">Front</div>
-			<div class="base back">Back</div>
-			<div class="base left">Left</div>
-			<div class="base right">Right</div>
-			<div class="base top">Top</div>
-			<div class="base bottom">Bottom</div>
+			<div class="base">Alpha</div>
+			<div class="base front">A</div>
+			<div class="base back">B</div>
+			<div class="base left">C</div>
+			<div class="base right">D</div>
+			<div class="base top">E</div>
+			<div class="base bottom">F</div>
 		</article>
 		</section>
 	</li>
